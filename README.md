@@ -1,2 +1,2 @@
 # COMP 1950
- comp 1950 introduction
+COMP 1950 Final Project
