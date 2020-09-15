@@ -1,0 +1,41 @@
+@use '../partials/variables' as *;
+@use '../partials/mixins' as *;
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+    }
+
+    li {
+        flex: 1;
+    }
+
+    a {
+        padding: 0 $navListPad;
+        display: block;
+        line-height: $navItemLineHeight;
+        text-decoration: none;
+        font-size: 1.4em;
+        #{$hover} {
+            background-color: rgba(42, 49, 238, 0.653);
+            height: 100%;
+        }
+        color: white;
+        font-weight: bold;
+    }
+    @include mq($phone) {
+        ul {
+            margin-top: 0;
+        }
+    }
+
+    @include mq($desktop) {
+        display: block;
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}

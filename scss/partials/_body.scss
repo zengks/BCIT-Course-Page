@@ -1,0 +1,318 @@
+@use '../partials/variables' as *;
+@use '../partials/mixins' as *;
+body {
+    main {
+        .intro {
+            font-size: 1.5em;
+            margin: 0 5em;
+            padding-top: 1.2em;
+            line-height: 1.8em;
+        }
+        .description {
+            font-size: 1.5em;
+            margin: 0 5em;
+            padding-top: 1em;
+            line-height: 1.8em;
+        }
+        .course-about {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 0.5;
+            border-right: 1px black solid;
+            line-height: 3em;
+            font-size: 1.7em;
+            padding-left: 1.5em;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            list-style: none;
+            a {
+                text-decoration: none;
+                #{$hover} {
+                    color: rgb(174, 170, 170);
+                }
+            }
+            color: black;
+        }
+
+        .overview {
+            flex: 2;
+            margin: 0 2em;
+            line-height: 1.5em;
+            font-size: 1.2em;
+        }
+
+        .schedule {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .schedule-sidebar {
+            flex: 1;
+            text-align: center;
+            border-right: 1px black solid;
+            padding-top: 0.4em;
+            line-height: 1.1em;
+            font-size: 1.4em;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: black;
+                #{$hover} {
+                    color: rgb(174, 170, 170);
+                }
+            }
+        }
+
+        .break-down {
+            flex: 3;
+            font-size: 1.3em;
+            padding-left: 5em;
+        }
+
+        .lesson {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .lesson-days {
+            font-size: 1.5em;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .day1-content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+            .ftp-img img {
+                margin: 0 auto;
+            }
+        }
+        .day2-content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        .day3-content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.5em;
+            border-bottom: 1px dashed rgb(206, 203, 203);
+        }
+
+        .contact-first {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 1.4em;
+        }
+
+        .contact-info {
+            font-size: 1.3em;
+            margin-left: 2em;
+        }
+
+        .form {
+            border: 3px black dashed;
+            padding: 1em;
+            margin-left: 2em;
+            // width: 100%;
+            width: 80%;
+            line-height: 2.4em;
+            font-size: 1.2em;
+            margin-top: 2em;
+            background-color: rgba(235, 228, 228, 0.342);
+            input[type="submit"] {
+                width: 30%;
+                height: 40px;
+                font-size: 1em;
+            }
+            input {
+                margin-right: 1em;
+            }
+        }
+        @include mq($phone) {
+            .intro {
+                font-size: 1em;
+                margin: 0 1em;
+            }
+            .description {
+                font-size: 1em;
+                margin: 0 1em;
+            }
+
+            .sidebar {
+                font-size: 0.4em;
+                padding: 0;
+            }
+
+            .overview {
+                font-size: 0.6em;
+                margin: 0;
+            }
+
+            .schedule-sidebar {
+                padding-top: 0.2em;
+                line-height: 1em;
+                font-size: 0.8em;
+                ul {
+                    padding: 0;
+                }
+            }
+
+            .break-down {
+                font-size: 0.8em;
+                padding-left: 1em;
+            }
+
+            .lesson {
+                font-size: 0.7em;
+            }
+
+            .contact-first {
+                font-size: 0.8em;
+            }
+
+            .contact-info {
+                font-size: 0.9em;
+            }
+
+            form {
+                font-size: 0.8em;
+            }
+
+            .day1-content,
+            .day2-content,
+            .day3-content {
+                font-size: 1em;
+            }
+        }
+
+        @include mq($phone1) {
+            .sidebar {
+                font-size: 1em;
+                padding-left: 0.2em;
+            }
+
+            .overview {
+                font-size: 1em;
+                margin-left: 0.2em;
+            }
+        }
+
+        @include mq($tablet) {
+            .intro {
+                margin: 0 2em;
+                font-size: 1.2em;
+            }
+
+            .description {
+                margin: 0 2em;
+                font-size: 1.2em;
+            }
+
+            .schedule-sidebar {
+                padding-top: 0.2em;
+                line-height: 1em;
+                font-size: 0.8em;
+                ul {
+                    padding: 0;
+                }
+            }
+
+            .break-down {
+                font-size: 1em;
+                padding-left: 1em;
+            }
+
+            .lesson {
+                font-size: 1em;
+            }
+
+            .contact-first {
+                font-size: 1.2em;
+            }
+
+            .contact-info {
+                font-size: 1.1em;
+            }
+
+            form {
+                font-size: 1em;
+            }
+        }
+
+        @include mq($desktop) {
+            .intro {
+                font-size: 1.5em;
+                margin: 0 5em;
+                padding-top: 1.2em;
+                line-height: 1.8em;
+            }
+            .description {
+                font-size: 1.5em;
+                margin: 0 5em;
+                padding-top: 1em;
+                line-height: 1.8em;
+            }
+
+            .overview {
+                flex: 2;
+                margin: 0 2em;
+                line-height: 1.5em;
+                font-size: 1.2em;
+            }
+
+            .sidebar {
+                line-height: 3em;
+                font-size: 1.3em;
+                padding-left: 1.5em;
+            }
+
+            .schedule-sidebar {
+                padding-top: 0.2em;
+                line-height: 1em;
+                font-size: 1.1em;
+                ul {
+                    padding: 0;
+                }
+            }
+
+            .break-down {
+                font-size: 1.3em;
+                padding-left: 1em;
+            }
+
+            .lesson {
+                font-size: 1.2em;
+            }
+
+            .contact-first {
+                font-size: 1.4em;
+            }
+
+            .contact-info {
+                font-size: 1.3em;
+            }
+
+            form {
+                font-size: 1.2em;
+            }
+
+            .day1-content,
+            .day2-content,
+            .day3-content {
+                font-size: 1.2em;
+            }
+        }
+    }
+}

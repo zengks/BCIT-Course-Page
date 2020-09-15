@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- BCIT logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/bcit/bcit-logo-phone.png" alt="BCIT Logo"></a>
+            </div>
+
+            <button class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="lesson.html">Course</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact">
+                <div class="contact-first">
+                    <img src="images/contact/question.jpg" alt="big red question mark with a man standing next to">
+                    <h2>Have questions? Feel free to contact us via following form!</h2>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>Instructor: Michael Whyte</li>
+                        <li>Email: <u>michael_whyte@bcit.ca</u></li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <form action="" id="#form1">
+                        <label for="lname"><strong>Last Name:</strong></label>
+                        <input type="text" id="lname" name="lname">
+                        <br>
+                        <label for="fname"><strong>First Name:</strong></label>
+                        <input type="text" id="fname" name="fname">
+                        <div class="email-input">
+                            <label for="email"><strong>Email Address:</strong></label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="student-num"><strong>BCIT Student Number:</strong></label>
+                            <input type="text" id="student-num" name="student-num">
+                        </div>
+
+                        <div class="status">
+                            <label for="status"><strong>Student Status</strong></label>
+                            <br>
+                            <input type="radio" id="prospective" name="student" value="prospective-student">
+                            <label for="prospective"><i>Prospective Student</i></label>
+                            <br>
+                            <input type="radio" id="current-stu" name="student" value="current-stu">
+                            <label for="current-stu"><i>Current Student</i></label>
+                        </div>
+
+                        <div class="submit1">
+                            <input type="submit" value="Submit" id="submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&#169CZ 2020</p>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

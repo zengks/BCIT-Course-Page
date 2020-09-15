@@ -1,0 +1,11 @@
+@use '../partials/variables' as *;
+@use '../partials/mixins' as *;
+
+.wrapper{
+    position: relative;
+    width: 100%;
+
+    @include mq($phone){
+        
+    }
+}

@@ -1,0 +1,56 @@
+@use '../partials/mixins' as *;
+@use '../partials/variables' as *;
+
+@include mq($phone) {
+    nav {
+        display: none;
+    }
+    .active {
+        .line {
+            &:nth-child(1) {
+                transform: translateY(13px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-13px) rotate(-45deg);
+            }
+        }
+
+        header{
+            flex-wrap: wrap;
+            height: auto;
+            align-items: center;
+        }
+
+        nav {
+            display: block;
+            // overflow: hidden;
+            transition: height 0.3s ease;
+            width: 100%;
+            text-align: center;
+           
+            ul {
+                display: block;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            a{
+                line-height: 50px;
+                border-top: 1px solid rgb(11, 11, 11);
+                color: rgb(254, 249, 249);
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@include mq($tablet){
+    a{
+        line-height: 60px;
+        font-size: 1.4em;
+    }
+}

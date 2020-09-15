@@ -1,0 +1,142 @@
+@use '../partials/mixins' as *;
+@use '../partials/variables' as *;
+
+.banner {
+    position: relative;
+
+    .banner-text {
+        position: absolute;
+        top: 40%;
+        left: 18%;
+        font-size: 8vh;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .banner-about {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        font-size: 8vh;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .banner-schedule {
+        position: absolute;
+        top: 28%;
+        left: 13%;
+        font-size: 13vh;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .banner-course {
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        font-size: 9vh;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    @include mq($phone) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            font-size: 1.3em;
+            left: 9%;
+            top: 25%;
+        }
+
+        .banner-course {
+            font-size: 1em;
+            left: 7%;
+        }
+    }
+
+    @include mq($phone1) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            left: 12%;
+            top: 30%;
+        }
+
+        .banner-course {
+            font-size: 1.6em;
+        }
+    }
+
+    @include mq($tablet) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            font-size: 1.8em;
+        }
+        .banner-schedule {
+            font-size: 2.2em;
+            left: 20%;
+        }
+    }
+
+    @include mq($tablet1) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            font-size: 2.1em;
+        }
+
+        .banner-schedule {
+            font-size: 2.5em;
+        }
+
+        .banner-course {
+            font-size: 2.5em;
+            left: 18%;
+        }
+    }
+
+    @include mq($desktop) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            font-size: 7vh;
+            left: 18%;
+        }
+
+        .banner-schedule {
+            left: 24%;
+        }
+
+        .banner-about {
+            left: 23%;
+        }
+    }
+
+    @include mq($desktop1) {
+        .banner-text,
+        .banner-about,
+        .banner-schedule,
+        .banner-course {
+            position: absolute;
+            top: 35%;
+            left: 18%;
+            font-size: 8vh;
+            color: rgb(255, 255, 255);
+            width: 100%;
+        }
+
+        .banner-schedule {
+            left: 25%;
+        }
+
+        .banner-course {
+            font-size: 8vh;
+        }
+    }
+}
