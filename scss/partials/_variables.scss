@@ -1,0 +1,12 @@
+@use '../partials/mixins' as *;
+
+$headerHeight: 110px;
+$navListPad: 50px;
+$navItemLineHeight: 110px;
+$hover: "&:hover, &:focus, &:active";
+$desktop: em(1020);
+$desktop1: em(1480);
+$tablet: em(600);
+$tablet1: em(765);
+$phone: em(320);
+$phone1: em(450);

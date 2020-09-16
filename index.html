@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>COMP 1950</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <!-- BCIT logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/bcit/bcit-logo-phone.png" alt="BCIT Logo"></a>
+            </div>
+
+            <button class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="lesson.html">Course</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="images/bcit/main-building-5.jpg" alt="BCIT Main Building">
+            <div class="layer">
+            </div>
+            <div class="banner-text">
+                <h2>Welcome to COMP 1950</h2>
+            </div>
+        </div>
+
+        <main>
+            <section class="intro">
+                <article>This practical course will provide more in-depth training regarding
+                    HTML and CSS along with a bit touch-up on Javascript and PHP.
+                    Successful students of this course will gain a deeper
+                    understanding of the latest technologies
+                    including HTML5 and CSS3 for developing web sites and applications with a
+                    focus on responsive design using Media Queries.</article>
+            </section>
+
+            <section class="description">
+                <article>
+                    Both prospective and current students are welcome to join this course with the following
+                    requirements:
+                </article>
+                <div class="students-description">
+                    <dl>
+                        <dt><strong>Prospective Students</strong></dt>
+                        <dd><i>
+                                COMP1950 has a pre-requisite of COMP1850. It means new students cannot register this
+                                course
+                                without completing COMP1850 unless the students can proof themselves already understand
+                                materials covered
+                                in COMP1850. More details can be found on BCIT website.</i>
+                        </dd>
+                        <dt><strong>Current Students</strong></dt>
+                        <dd><i>
+                                Current students who already pass COMP1850 are eligible to register COMP1950 as long as
+                                seats are available.
+                            </i>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&#169CZ 2020</p>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

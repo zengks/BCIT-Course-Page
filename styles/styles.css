@@ -1,0 +1,562 @@
+body main .intro {
+  font-size: 1.5em;
+  margin: 0 5em;
+  padding-top: 1.2em;
+  line-height: 1.8em;
+}
+body main .description {
+  font-size: 1.5em;
+  margin: 0 5em;
+  padding-top: 1em;
+  line-height: 1.8em;
+}
+body main .course-about {
+  display: flex;
+}
+body main .sidebar {
+  flex: 0.5;
+  border-right: 1px black solid;
+  line-height: 3em;
+  font-size: 1.7em;
+  padding-left: 1.5em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  list-style: none;
+  color: black;
+}
+body main .sidebar a {
+  text-decoration: none;
+}
+body main .sidebar a:hover, body main .sidebar a:focus, body main .sidebar a:active {
+  color: #aeaaaa;
+}
+body main .overview {
+  flex: 2;
+  margin: 0 2em;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+body main .schedule {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .schedule-sidebar {
+  flex: 1;
+  text-align: center;
+  border-right: 1px black solid;
+  padding-top: 0.4em;
+  line-height: 1.1em;
+  font-size: 1.4em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  list-style: none;
+}
+body main .schedule-sidebar a {
+  text-decoration: none;
+  color: black;
+}
+body main .schedule-sidebar a:hover, body main .schedule-sidebar a:focus, body main .schedule-sidebar a:active {
+  color: #aeaaaa;
+}
+body main .break-down {
+  flex: 3;
+  font-size: 1.3em;
+  padding-left: 5em;
+}
+body main .lesson {
+  text-align: center;
+  font-size: 1.2em;
+}
+body main .lesson-days {
+  font-size: 1.5em;
+}
+body main .lesson-days a {
+  text-decoration: none;
+}
+body main .day1-content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+body main .day1-content .ftp-img img {
+  margin: 0 auto;
+}
+body main .day2-content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+body main .day3-content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+body main .title {
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 1px dashed #cecbcb;
+}
+body main .contact-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.4em;
+}
+body main .contact-info {
+  font-size: 1.3em;
+  margin-left: 2em;
+}
+body main .form {
+  border: 3px black dashed;
+  padding: 1em;
+  margin-left: 2em;
+  width: 80%;
+  line-height: 2.4em;
+  font-size: 1.2em;
+  margin-top: 2em;
+  background-color: rgba(235, 228, 228, 0.342);
+}
+body main .form input[type=submit] {
+  width: 30%;
+  height: 40px;
+  font-size: 1em;
+}
+body main .form input {
+  margin-right: 1em;
+}
+@media (min-width: 20em) {
+  body main .intro {
+    font-size: 1em;
+    margin: 0 1em;
+  }
+  body main .description {
+    font-size: 1em;
+    margin: 0 1em;
+  }
+  body main .sidebar {
+    font-size: 0.4em;
+    padding: 0;
+  }
+  body main .overview {
+    font-size: 0.6em;
+    margin: 0;
+  }
+  body main .schedule-sidebar {
+    padding-top: 0.2em;
+    line-height: 1em;
+    font-size: 0.8em;
+  }
+  body main .schedule-sidebar ul {
+    padding: 0;
+  }
+  body main .break-down {
+    font-size: 0.8em;
+    padding-left: 1em;
+  }
+  body main .lesson {
+    font-size: 0.7em;
+  }
+  body main .contact-first {
+    font-size: 0.8em;
+  }
+  body main .contact-info {
+    font-size: 0.9em;
+  }
+  body main form {
+    font-size: 0.8em;
+  }
+  body main .day1-content,
+body main .day2-content,
+body main .day3-content {
+    font-size: 1em;
+  }
+}
+@media (min-width: 28.125em) {
+  body main .sidebar {
+    font-size: 1em;
+    padding-left: 0.2em;
+  }
+  body main .overview {
+    font-size: 1em;
+    margin-left: 0.2em;
+  }
+}
+@media (min-width: 37.5em) {
+  body main .intro {
+    margin: 0 2em;
+    font-size: 1.2em;
+  }
+  body main .description {
+    margin: 0 2em;
+    font-size: 1.2em;
+  }
+  body main .schedule-sidebar {
+    padding-top: 0.2em;
+    line-height: 1em;
+    font-size: 0.8em;
+  }
+  body main .schedule-sidebar ul {
+    padding: 0;
+  }
+  body main .break-down {
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  body main .lesson {
+    font-size: 1em;
+  }
+  body main .contact-first {
+    font-size: 1.2em;
+  }
+  body main .contact-info {
+    font-size: 1.1em;
+  }
+  body main form {
+    font-size: 1em;
+  }
+}
+@media (min-width: 63.75em) {
+  body main .intro {
+    font-size: 1.5em;
+    margin: 0 5em;
+    padding-top: 1.2em;
+    line-height: 1.8em;
+  }
+  body main .description {
+    font-size: 1.5em;
+    margin: 0 5em;
+    padding-top: 1em;
+    line-height: 1.8em;
+  }
+  body main .overview {
+    flex: 2;
+    margin: 0 2em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
+  body main .sidebar {
+    line-height: 3em;
+    font-size: 1.3em;
+    padding-left: 1.5em;
+  }
+  body main .schedule-sidebar {
+    padding-top: 0.2em;
+    line-height: 1em;
+    font-size: 1.1em;
+  }
+  body main .schedule-sidebar ul {
+    padding: 0;
+  }
+  body main .break-down {
+    font-size: 1.3em;
+    padding-left: 1em;
+  }
+  body main .lesson {
+    font-size: 1.2em;
+  }
+  body main .contact-first {
+    font-size: 1.4em;
+  }
+  body main .contact-info {
+    font-size: 1.3em;
+  }
+  body main form {
+    font-size: 1.2em;
+  }
+  body main .day1-content,
+body main .day2-content,
+body main .day3-content {
+    font-size: 1.2em;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+nav li {
+  flex: 1;
+}
+nav a {
+  padding: 0 50px;
+  display: block;
+  line-height: 110px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+}
+nav a:hover, nav a:focus, nav a:active {
+  background-color: rgba(42, 49, 238, 0.653);
+  height: 100%;
+}
+@media (min-width: 20em) {
+  nav ul {
+    margin-top: 0;
+  }
+}
+@media (min-width: 63.75em) {
+  nav {
+    display: block;
+  }
+  nav ul {
+    margin-bottom: 0;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  align-items: center;
+  background-color: rgba(43, 72, 236, 0.899);
+}
+header .hamburger {
+  display: none;
+}
+header .logo {
+  padding-left: 4em;
+}
+@media (min-width: 20em) {
+  header {
+    height: auto;
+  }
+  header .logo {
+    padding-left: 2em;
+  }
+  header .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    margin-right: 2em;
+  }
+  header .hamburger:hover, header .hamburger:focus, header .hamburger:active {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+  }
+  header .hamburger .line {
+    width: 50px;
+    height: 5px;
+    display: block;
+    margin: 8px 0;
+    background: white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 20em) and (min-width: 63.75em) {
+  header .hamburger {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 3em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  font-size: 8vh;
+  color: white;
+  width: 100%;
+}
+.banner .banner-about {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 8vh;
+  color: white;
+  width: 100%;
+}
+.banner .banner-schedule {
+  position: absolute;
+  top: 28%;
+  left: 13%;
+  font-size: 13vh;
+  color: white;
+  width: 100%;
+}
+.banner .banner-course {
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  font-size: 9vh;
+  color: white;
+  width: 100%;
+}
+@media (min-width: 20em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    font-size: 1.3em;
+    left: 9%;
+    top: 25%;
+  }
+  .banner .banner-course {
+    font-size: 1em;
+    left: 7%;
+  }
+}
+@media (min-width: 28.125em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    left: 12%;
+    top: 30%;
+  }
+  .banner .banner-course {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 37.5em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    font-size: 1.8em;
+  }
+  .banner .banner-schedule {
+    font-size: 2.2em;
+    left: 20%;
+  }
+}
+@media (min-width: 47.8125em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    font-size: 2.1em;
+  }
+  .banner .banner-schedule {
+    font-size: 2.5em;
+  }
+  .banner .banner-course {
+    font-size: 2.5em;
+    left: 18%;
+  }
+}
+@media (min-width: 63.75em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    font-size: 7vh;
+    left: 18%;
+  }
+  .banner .banner-schedule {
+    left: 24%;
+  }
+  .banner .banner-about {
+    left: 23%;
+  }
+}
+@media (min-width: 92.5em) {
+  .banner .banner-text,
+.banner .banner-about,
+.banner .banner-schedule,
+.banner .banner-course {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    font-size: 8vh;
+    color: white;
+    width: 100%;
+  }
+  .banner .banner-schedule {
+    left: 25%;
+  }
+  .banner .banner-course {
+    font-size: 8vh;
+  }
+}
+
+.container header {
+  background-color: rgba(31, 19, 213, 0.824);
+}
+.container main {
+  position: absolute;
+  top: 15%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 20em) {
+  nav {
+    display: none;
+  }
+
+  .active .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+  .active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .active .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  .active header {
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+  }
+  .active nav {
+    display: block;
+    transition: height 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  .active nav ul {
+    display: block;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .active nav a {
+    line-height: 50px;
+    border-top: 1px solid #0b0b0b;
+    color: #fef9f9;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 37.5em) {
+  a {
+    line-height: 60px;
+    font-size: 1.4em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
